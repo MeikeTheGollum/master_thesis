@@ -48,11 +48,25 @@
     
 
 
+    <!-- http://www.semanticweb.org/home_objects#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home_objects#contains">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/home_objects#hasPart -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home_objects#hasPart">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/home_objects#isPartOf"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/home_objects#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/home_objects#isLocatedIn"/>
     
 
 
@@ -77,6 +91,24 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Armchair">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignatedChair"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#LivingRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#Office"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#OutdoorSpace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <home_objects1:synonym>arm chair</home_objects1:synonym>
         <home_objects1:synonym>chair with arms</home_objects1:synonym>
         <rdfs:comment>A more comfortable chair that includes sides to support arms.</rdfs:comment>
@@ -433,6 +465,12 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#KitchenCabinet">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Cabinet"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#Kitchen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>A cupboard designed to be used in kitchen environments.</rdfs:comment>
         <rdfs:label>kitchen cabinet</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q1306022"/>
@@ -584,6 +622,12 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Sofa">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#SittingFurniture"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#LivingRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>A comfortable seat for two or more people to sit on.</rdfs:comment>
     </owl:Class>
     
@@ -719,6 +763,18 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Wardrobe">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cupboard"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#Bedroom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#Hallway"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <home_objects1:synonym>garderobe</home_objects1:synonym>
         <rdfs:comment>A cupboard which is typically used for hanging clothes.</rdfs:comment>
         <rdfs:label>wardrobe</rdfs:label>
@@ -800,6 +856,18 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#BarStool">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Stools"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#Kitchen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#LivingRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <home_objects1:synonym>bar-stool</home_objects1:synonym>
         <home_objects1:synonym>barstool</home_objects1:synonym>
         <rdfs:comment>Tall chair type</rdfs:comment>
@@ -838,6 +906,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#BathroomCabinet">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Cabinet"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#Bathroom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>bathroom cabinet</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q4869069"/>
     </owl:Class>
@@ -848,6 +922,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#BeanBagChair">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignatedChair"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#LivingRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <home_objects1:synonym>beanbag chair</home_objects1:synonym>
         <home_objects1:synonym>sacco bean bag</home_objects1:synonym>
         <home_objects1:synonym>sacco chair</home_objects1:synonym>
@@ -875,6 +955,18 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Blanket">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Decor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#Bedroom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#LivingRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>A large piece of woven fabric used as a bed covering or other covering</rdfs:comment>
         <rdfs:label>blanket</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q5852"/>
@@ -901,6 +993,30 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Cabinet"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Shelf"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Storage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#Bedroom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#Hallway"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#LivingRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#Office"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <home_objects1:synonym>bookshelf</home_objects1:synonym>
         <home_objects1:synonym>bookshelves</home_objects1:synonym>
         <rdfs:comment>Cabinet with shelving used to store books</rdfs:comment>
@@ -937,6 +1053,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#ChaiseLounge">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignatedChair"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#LivingRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <home_objects1:synonym>duchesse</home_objects1:synonym>
         <home_objects1:synonym>lounge chair</home_objects1:synonym>
         <rdfs:comment>Upholstered chair that is long enough to support the legs</rdfs:comment>
@@ -963,6 +1085,18 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#ChinaCabinet">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Cabinet"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#Kitchen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#LivingRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <home_objects1:synonym>breakfront</home_objects1:synonym>
         <rdfs:label>china cabinet</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q56588168"/>
@@ -1048,6 +1182,18 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#DiningChair">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignatedChair"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#Kitchen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#LivingRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>dinning chair</rdfs:label>
     </owl:Class>
     
@@ -1078,6 +1224,24 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#DisplayCabinet">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Cabinet"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#Hallway"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#Kitchen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#LivingRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <home_objects1:synonym>display case</home_objects1:synonym>
         <home_objects1:synonym>showcase</home_objects1:synonym>
         <home_objects1:synonym>trophy case</home_objects1:synonym>
@@ -1274,6 +1438,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#MedicineCabinet">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Cabinet"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#Bathroom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <home_objects1:synonym>home apothecary</home_objects1:synonym>
         <home_objects1:synonym>medicine chest</home_objects1:synonym>
         <rdfs:comment rdf:resource="https://www.wikidata.org/entity/Q1590990"/>
@@ -1349,6 +1519,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#OfficeChair">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignatedChair"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#Office"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <home_objects1:synonym>desk chair</home_objects1:synonym>
         <rdfs:comment>Seating for office worker</rdfs:comment>
         <rdfs:label>office chair</rdfs:label>
@@ -1361,6 +1537,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Ottoman">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignatedChair"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#LivingRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <home_objects1:synonym>footstool</home_objects1:synonym>
         <home_objects1:synonym>hassock</home_objects1:synonym>
         <home_objects1:synonym>poef</home_objects1:synonym>
@@ -1416,6 +1598,24 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Pillows">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Decor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#Bedroom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#LivingRoom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#OutdoorSpace"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Cushion for the head</rdfs:comment>
         <rdfs:label>pillow</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q99895"/>
@@ -1725,6 +1925,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#WallMounted">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Decor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/home_objects#isLocatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/home_objects#Areas"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>wall mounted</rdfs:label>
     </owl:Class>
     
