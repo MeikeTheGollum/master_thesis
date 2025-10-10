@@ -31,6 +31,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/home_objects#synonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/home_objects#synonym"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -71,7 +77,11 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Armchair">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignatedChair"/>
+        <home_objects1:synonym>arm chair</home_objects1:synonym>
+        <home_objects1:synonym>chair with arms</home_objects1:synonym>
         <rdfs:comment>A more comfortable chair that includes sides to support arms.</rdfs:comment>
+        <rdfs:label>armchair</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q11285759"/>
     </owl:Class>
     
 
@@ -80,7 +90,10 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#BedsideTable">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#SideTable"/>
+        <home_objects1:synonym>nightstand</home_objects1:synonym>
         <rdfs:comment>A small table typically located next to a bed.</rdfs:comment>
+        <rdfs:label>bedside table</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q667999"/>
     </owl:Class>
     
 
@@ -90,6 +103,8 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Bowl">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Crockery"/>
         <rdfs:comment>A round, deep object used to contain food or liquid.</rdfs:comment>
+        <rdfs:label>bowl</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q153988"/>
     </owl:Class>
     
 
@@ -99,6 +114,8 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#BreadKnife">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#KitchenKnife"/>
         <rdfs:comment>A knife to cut bread.</rdfs:comment>
+        <rdfs:label>bread knife</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q8352359"/>
     </owl:Class>
     
 
@@ -108,6 +125,7 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#BreakfastPlate">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Plate"/>
         <rdfs:comment>A smaller plate used for serving bread at the dinning table with the main meal or to serve breakfast.</rdfs:comment>
+        <rdfs:label>breakfast plate</rdfs:label>
     </owl:Class>
     
 
@@ -116,7 +134,10 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#CeramicCooktop">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#ElectricCooktop"/>
+        <home_objects1:synonym>glass-ceramic cooktop</home_objects1:synonym>
         <rdfs:comment>A cooktop that uses heated ceramic elements.</rdfs:comment>
+        <rdfs:label>ceramic cooktop</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q911461"/>
     </owl:Class>
     
 
@@ -125,7 +146,10 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#CoffeeTable">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Table"/>
+        <home_objects1:synonym>cocktail table</home_objects1:synonym>
         <rdfs:comment>A small and low table which is typically used as a shelf for small items such as cups, and located in front of a sofa.</rdfs:comment>
+        <rdfs:label>coffee table</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q2407432"/>
     </owl:Class>
     
 
@@ -135,6 +159,7 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#CoilCooktop">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#ElectricCooktop"/>
         <rdfs:comment>A cooktop that uses heated metal coils.</rdfs:comment>
+        <rdfs:label>coil cooktop</rdfs:label>
     </owl:Class>
     
 
@@ -143,6 +168,9 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Compartment">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Components"/>
+        <rdfs:comment>Portion of space where items can be stored, separated from other compartments</rdfs:comment>
+        <rdfs:label>compartment</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q12347612"/>
     </owl:Class>
     
 
@@ -151,7 +179,13 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Cooktop">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Components"/>
+        <home_objects1:synonym>cooker</home_objects1:synonym>
+        <home_objects1:synonym>cookers</home_objects1:synonym>
+        <home_objects1:synonym>cooktops</home_objects1:synonym>
+        <home_objects1:synonym>stovetop</home_objects1:synonym>
         <rdfs:comment>A typically circular surface where food is cooked.</rdfs:comment>
+        <rdfs:label>cooktop</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q3748418"/>
     </owl:Class>
     
 
@@ -160,7 +194,12 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Countertop">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#TopSurface"/>
+        <home_objects1:synonym>counter</home_objects1:synonym>
+        <home_objects1:synonym>work table</home_objects1:synonym>
+        <home_objects1:synonym>worktop</home_objects1:synonym>
         <rdfs:comment>A flat surface for working on.</rdfs:comment>
+        <rdfs:label>countertop</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q599007"/>
     </owl:Class>
     
 
@@ -170,6 +209,7 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Crockery">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Tableware"/>
         <rdfs:comment>An object designed to contain food or store, cook, eat, or serve it.</rdfs:comment>
+        <rdfs:label>crockery</rdfs:label>
     </owl:Class>
     
 
@@ -178,7 +218,11 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Cup">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Crockery"/>
+        <home_objects1:synonym>glass</home_objects1:synonym>
         <rdfs:comment>A round shaped container used for storing liquid and drinking out of it, typically has a handle for grasping.</rdfs:comment>
+        <rdfs:comment>Vessel for liquids</rdfs:comment>
+        <rdfs:label>cup</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q81727"/>
     </owl:Class>
     
 
@@ -189,6 +233,8 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Furniture"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Storage"/>
         <rdfs:comment>A piece of furniture for storing things.</rdfs:comment>
+        <rdfs:label>cupboard</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q5662058"/>
     </owl:Class>
     
 
@@ -197,6 +243,13 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Cutlery">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Tableware"/>
+        <home_objects1:synonym>eating utensil</home_objects1:synonym>
+        <home_objects1:synonym>flatware</home_objects1:synonym>
+        <home_objects1:synonym>silverware</home_objects1:synonym>
+        <home_objects1:synonym>tableware</home_objects1:synonym>
+        <rdfs:comment>Kitchen utensil used for eating food</rdfs:comment>
+        <rdfs:label>cutlery</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q81944"/>
     </owl:Class>
     
 
@@ -206,6 +259,8 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#CuttingTool">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Tool"/>
         <rdfs:comment>A tool designed to cut, slice or otherwise manipulate cutable objects.</rdfs:comment>
+        <rdfs:label>cutting tool</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q1760958"/>
     </owl:Class>
     
 
@@ -214,6 +269,7 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#DesignatedChair">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#SittingFurniture"/>
+        <rdfs:label>designated chair</rdfs:label>
     </owl:Class>
     
 
@@ -222,8 +278,11 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#DesignatedHandle">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Components"/>
+        <home_objects1:synonym>grip</home_objects1:synonym>
+        <home_objects1:synonym>handle</home_objects1:synonym>
         <rdfs:comment>An item designed to fit well within a grasping hand, often attached to another item to enhance its manipulability.</rdfs:comment>
         <rdfs:label>Designed handle</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q200266"/>
     </owl:Class>
     
 
@@ -232,8 +291,10 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#DesignedSpade">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Components"/>
+        <home_objects1:synonym>spade</home_objects1:synonym>
         <rdfs:comment>A sharp-edged metal blade used for digging or cutting.</rdfs:comment>
         <rdfs:label>Designed spade</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q216642"/>
     </owl:Class>
     
 
@@ -243,6 +304,8 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#DessertFork">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Fork"/>
         <rdfs:comment>A smaller fork for eating desserts e.g. cake,</rdfs:comment>
+        <rdfs:label>dessert fork</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q19372483"/>
     </owl:Class>
     
 
@@ -252,6 +315,7 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#DinnerPlate">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Plate"/>
         <rdfs:comment>A regular size plate for eating main meals.</rdfs:comment>
+        <rdfs:label>dinner plate</rdfs:label>
     </owl:Class>
     
 
@@ -272,6 +336,8 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Door">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Components"/>
         <rdfs:comment>A hinged, sliding, or revolving barrier at the entrance to a building, room, or vehicle, or in the frame of a cupboard.</rdfs:comment>
+        <rdfs:label>door</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q36794"/>
     </owl:Class>
     
 
@@ -281,6 +347,8 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Drawer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Components"/>
         <rdfs:comment>A storage compartment without a lid, made to slide horizontally in and out of a piece of furniture.</rdfs:comment>
+        <rdfs:label>drawer</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q223575"/>
     </owl:Class>
     
 
@@ -290,6 +358,7 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#ElectricCooktop">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cooktop"/>
         <rdfs:comment>A cooktop that uses electricity for heating.</rdfs:comment>
+        <rdfs:label>electric cooktop</rdfs:label>
     </owl:Class>
     
 
@@ -299,6 +368,8 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Fork">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cutlery"/>
         <rdfs:comment>Cutlery with two or more prongs used for lifting food to the mouth or holding it when cutting.</rdfs:comment>
+        <rdfs:label>fork</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q81881"/>
     </owl:Class>
     
 
@@ -307,7 +378,10 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#FreezerCompartment">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Compartment"/>
+        <home_objects1:synonym>freezer</home_objects1:synonym>
         <rdfs:comment>A freezer compartment used to regulate the temperature of contained objects to a value below zero degree Celsius.</rdfs:comment>
+        <rdfs:label>freezer compartment</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q2487743"/>
     </owl:Class>
     
 
@@ -317,6 +391,7 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#GasCooktop">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cooktop"/>
         <rdfs:comment>A cooktop that uses burning gas for heating.</rdfs:comment>
+        <rdfs:label>gas cooktop</rdfs:label>
     </owl:Class>
     
 
@@ -325,7 +400,10 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Glass">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Crockery"/>
+        <home_objects1:synonym>drinking glass</home_objects1:synonym>
         <rdfs:comment>A container made usually from glass or transparent plastic which is used to hold, typically cold, beverages.</rdfs:comment>
+        <rdfs:label>glass</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q21167379"/>
     </owl:Class>
     
 
@@ -335,6 +413,8 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Hotplate">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Components"/>
         <rdfs:comment>A flat heated surface used for cooking food or keeping it hot.</rdfs:comment>
+        <rdfs:label>hot plate</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q509869"/>
     </owl:Class>
     
 
@@ -344,6 +424,7 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#InductionCooktop">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#ElectricCooktop"/>
         <rdfs:comment>A type of cooktop where heat is induced in the cookware. Only special induction cookware can be used with this type of cooktop.</rdfs:comment>
+        <rdfs:label>induction cooktop</rdfs:label>
     </owl:Class>
     
 
@@ -353,7 +434,8 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#KitchenCabinet">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Cabinet"/>
         <rdfs:comment>A cupboard designed to be used in kitchen environments.</rdfs:comment>
-        <rdfs:label>Kitchen Cabinet</rdfs:label>
+        <rdfs:label>kitchen cabinet</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q1306022"/>
     </owl:Class>
     
 
@@ -363,6 +445,8 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#KitchenKnife">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Knife"/>
         <rdfs:comment>A tool designed to be used for kitchen related common tasks. Such as smearing a bread or cutting a cucumber.</rdfs:comment>
+        <rdfs:label>kitchen knife</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q599312"/>
     </owl:Class>
     
 
@@ -371,7 +455,10 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Knife">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#CuttingTool"/>
+        <home_objects1:synonym>blade</home_objects1:synonym>
         <rdfs:comment>An instrument composed of a blade fixed into a handle, used for cutting or as a weapon.</rdfs:comment>
+        <rdfs:label>knife</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q32489"/>
     </owl:Class>
     
 
@@ -380,7 +467,11 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Lid">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Components"/>
+        <home_objects1:synonym>box cover</home_objects1:synonym>
+        <home_objects1:synonym>cover</home_objects1:synonym>
         <rdfs:comment>A removable or hinged cover for the top of a container.</rdfs:comment>
+        <rdfs:label>lid</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q2488579"/>
     </owl:Class>
     
 
@@ -389,8 +480,9 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Oven">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Appliances"/>
-        <home_objects1:hasWikidata rdf:resource="https://www.wikidata.org/entity/Q36539"/>
         <rdfs:comment>An appliance with an enclosed compartment that exposes food to heat</rdfs:comment>
+        <rdfs:label>oven</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q36539"/>
     </owl:Class>
     
 
@@ -400,6 +492,8 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Pan">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Crockery"/>
         <rdfs:comment>A container used for cooking food.</rdfs:comment>
+        <rdfs:label>pan</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q43203929"/>
     </owl:Class>
     
 
@@ -409,6 +503,7 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#PastaBowl">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Bowl"/>
         <rdfs:comment>A bowl which holds, or at least is intended to usually hold, pasta,</rdfs:comment>
+        <rdfs:label>pasta bowl</rdfs:label>
     </owl:Class>
     
 
@@ -418,6 +513,9 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Plate">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Crockery"/>
         <rdfs:comment>A flat and usually circular object from which foor is eaten or served.</rdfs:comment>
+        <rdfs:label>dish</rdfs:label>
+        <rdfs:label>plate</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q57216"/>
     </owl:Class>
     
 
@@ -426,7 +524,10 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Pot">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Crockery"/>
+        <home_objects1:synonym>cooking pot</home_objects1:synonym>
         <rdfs:comment>A container used for cooking food.</rdfs:comment>
+        <rdfs:label>pot</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q2366864"/>
     </owl:Class>
     
 
@@ -436,6 +537,7 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Rack">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Components"/>
         <rdfs:comment>A frame for holding or storing things.</rdfs:comment>
+        <rdfs:label>rack</rdfs:label>
     </owl:Class>
     
 
@@ -444,7 +546,10 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Refrigerator">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#ElectricalAppliances"/>
+        <home_objects1:synonym>fridge</home_objects1:synonym>
         <rdfs:comment>An appliance which is artificially kept cool and used to store food and drink.</rdfs:comment>
+        <rdfs:label>refrigerator</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q37828"/>
     </owl:Class>
     
 
@@ -454,6 +559,8 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#SaladBowl">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Bowl"/>
         <rdfs:comment>A bowl which holds, or at least is intended to usually hold, salad.</rdfs:comment>
+        <rdfs:label>salad bowl</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q3469478"/>
     </owl:Class>
     
 
@@ -462,7 +569,13 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Sink">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Components"/>
+        <home_objects1:synonym>bathroom sink</home_objects1:synonym>
+        <home_objects1:synonym>hand basin</home_objects1:synonym>
+        <home_objects1:synonym>wash basin</home_objects1:synonym>
+        <home_objects1:synonym>washbowl</home_objects1:synonym>
         <rdfs:comment>A large bowl used to direkt the flow of liquid into a drain, typically has a tap used to fill the sink with water, and a plug used to block the drain,</rdfs:comment>
+        <rdfs:label>sink</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q140565"/>
     </owl:Class>
     
 
@@ -481,6 +594,7 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#SoupPot">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Pot"/>
         <rdfs:comment>A pot which holds, or at least is intended to usually hold, soup.</rdfs:comment>
+        <rdfs:label>soup pot</rdfs:label>
     </owl:Class>
     
 
@@ -489,6 +603,9 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Spatula">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cutlery"/>
+        <rdfs:comment>Flexible, wide blade, used to lift, smear, mix, spread, or scrape material, including foods, drugs, plaster, and paint</rdfs:comment>
+        <rdfs:label>spatula</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q15148"/>
     </owl:Class>
     
 
@@ -498,6 +615,8 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Spoon">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cutlery"/>
         <rdfs:comment>An eating or cooking implement consisting of a small shallow bowl with a relatively long handle.</rdfs:comment>
+        <rdfs:label>spoon</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q81895"/>
     </owl:Class>
     
 
@@ -506,7 +625,12 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Stove">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Appliances"/>
+        <home_objects1:synonym>cooker</home_objects1:synonym>
+        <home_objects1:synonym>hearth</home_objects1:synonym>
+        <home_objects1:synonym>kitchen stove</home_objects1:synonym>
         <rdfs:comment>An appliance for cooking or heating</rdfs:comment>
+        <rdfs:label>stove</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q182995"/>
     </owl:Class>
     
 
@@ -515,7 +639,9 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Table">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Furniture"/>
+        <home_objects1:synonym rdf:resource="https://www.wikidata.org/entity/Q14748"/>
         <rdfs:comment>A piece of furniture with a flat top and one or more legs.</rdfs:comment>
+        <rdfs:label>table</rdfs:label>
     </owl:Class>
     
 
@@ -525,6 +651,7 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#TableFork">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Fork"/>
         <rdfs:comment>A regular size fork used for eating meals, e.g. for Spaghetti.</rdfs:comment>
+        <rdfs:label>table fork</rdfs:label>
     </owl:Class>
     
 
@@ -534,6 +661,8 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#TableKnife">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#KitchenKnife"/>
         <rdfs:comment>A knife used for eating or spreading butter on bread.</rdfs:comment>
+        <rdfs:label>table knife</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q3130638"/>
     </owl:Class>
     
 
@@ -543,6 +672,7 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#TableSpoon">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Spoon"/>
         <rdfs:comment>A spoon usually refered as larger spoon used for serving. However in some regions it is the largest spoon used for eating.</rdfs:comment>
+        <rdfs:label>table spoon</rdfs:label>
     </owl:Class>
     
 
@@ -551,6 +681,10 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Tableware">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Tool"/>
+        <home_objects1:synonym>dishware</home_objects1:synonym>
+        <rdfs:comment>Items used for setting a table and serving food</rdfs:comment>
+        <rdfs:label>tableware</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entit/Q851782"/>
     </owl:Class>
     
 
@@ -559,7 +693,12 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Tap">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Components"/>
+        <home_objects1:synonym>faucet</home_objects1:synonym>
+        <home_objects1:synonym>water tap</home_objects1:synonym>
+        <home_objects1:synonym>water taps</home_objects1:synonym>
         <rdfs:comment>A component designed to control the flow of water from a pipe.</rdfs:comment>
+        <rdfs:label>tap</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q656656"/>
     </owl:Class>
     
 
@@ -568,7 +707,10 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#TeaSpoon">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Spoon"/>
+        <home_objects1:synonym>teaspoon</home_objects1:synonym>
         <rdfs:comment>A spoon relatively smaller in size used for stiring a cup of tea or measuring a volume. Specifically for cooking or medicine purposes, the volume is defined as 5ml.</rdfs:comment>
+        <rdfs:label>tea spoon</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q216425"/>
     </owl:Class>
     
 
@@ -577,7 +719,10 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#Wardrobe">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cupboard"/>
+        <home_objects1:synonym>garderobe</home_objects1:synonym>
         <rdfs:comment>A cupboard which is typically used for hanging clothes.</rdfs:comment>
+        <rdfs:label>wardrobe</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q106106"/>
     </owl:Class>
     
 
@@ -587,6 +732,8 @@
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#WaterGlass">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Glass"/>
         <rdfs:comment>A glass which holds, or at least is intended to usually hold, water. Also affords drinking from it.</rdfs:comment>
+        <rdfs:label>water glass</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q107385620"/>
     </owl:Class>
     
 
@@ -595,7 +742,10 @@
 
     <owl:Class rdf:about="http://www.ease-crc.org/ont/SOMA.owl#WineGlass">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Glass"/>
+        <home_objects1:synonym>wineglass</home_objects1:synonym>
         <rdfs:comment>A glass which holds, or at least is intended to usually hold, wine. Also affords drinking from it.</rdfs:comment>
+        <rdfs:label>wine glass</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q1531435"/>
     </owl:Class>
     
 
@@ -627,7 +777,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Armrest">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Components"/>
+        <home_objects1:synonym>arm rest</home_objects1:synonym>
         <rdfs:comment>Side supports for resting arms. Common in chairs and sofas.</rdfs:comment>
+        <rdfs:label>armrest</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q2822867"/>
     </owl:Class>
     
 
@@ -637,14 +790,21 @@
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Backrest">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Components"/>
         <rdfs:comment>Supports the back. Common in chairs, sofas, and benches.</rdfs:comment>
+        <rdfs:label>backrest</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q3037336"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/home_objects#BarStools -->
+    <!-- http://www.semanticweb.org/home_objects#BarStool -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/home_objects#BarStools">
+    <owl:Class rdf:about="http://www.semanticweb.org/home_objects#BarStool">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Stools"/>
+        <home_objects1:synonym>bar-stool</home_objects1:synonym>
+        <home_objects1:synonym>barstool</home_objects1:synonym>
+        <rdfs:comment>Tall chair type</rdfs:comment>
+        <rdfs:label>bar stool</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q376339"/>
     </owl:Class>
     
 
@@ -653,7 +813,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Base">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Components"/>
+        <home_objects1:synonym>foundation</home_objects1:synonym>
         <rdfs:comment>Bottom part of furniture, providing stability.</rdfs:comment>
+        <rdfs:label>base</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q191360"/>
     </owl:Class>
     
 
@@ -662,6 +825,11 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Bathroom">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Areas"/>
+        <home_objects1:synonym>restroom</home_objects1:synonym>
+        <home_objects1:synonym>washroom</home_objects1:synonym>
+        <rdfs:comment>Room for personal hygiene</rdfs:comment>
+        <rdfs:label>bathroom</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q190771"/>
     </owl:Class>
     
 
@@ -670,6 +838,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#BathroomCabinet">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Cabinet"/>
+        <rdfs:label>bathroom cabinet</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q4869069"/>
     </owl:Class>
     
 
@@ -678,6 +848,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#BeanBagChair">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignatedChair"/>
+        <home_objects1:synonym>beanbag chair</home_objects1:synonym>
+        <home_objects1:synonym>sacco bean bag</home_objects1:synonym>
+        <home_objects1:synonym>sacco chair</home_objects1:synonym>
+        <rdfs:comment>1960s anatomic chair design</rdfs:comment>
+        <rdfs:label>bean bag chair</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q55698"/>
     </owl:Class>
     
 
@@ -686,6 +862,11 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Bedroom">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Areas"/>
+        <home_objects1:synonym>bedchamber</home_objects1:synonym>
+        <home_objects1:synonym>sleeping room</home_objects1:synonym>
+        <rdfs:comment>Private room where people usually sleep for the night or relax during the day</rdfs:comment>
+        <rdfs:label>bedroom</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q193837"/>
     </owl:Class>
     
 
@@ -694,6 +875,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Blanket">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Decor"/>
+        <rdfs:comment>A large piece of woven fabric used as a bed covering or other covering</rdfs:comment>
+        <rdfs:label>blanket</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q5852"/>
     </owl:Class>
     
 
@@ -702,10 +886,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Blender">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#ElectricalAppliances"/>
+        <home_objects1:synonym>kitchen blender</home_objects1:synonym>
+        <home_objects1:synonym>liquidiser</home_objects1:synonym>
+        <home_objects1:synonym>mixer</home_objects1:synonym>
         <rdfs:label>blender</rdfs:label>
-        <rdfs:label>kitchen blender</rdfs:label>
-        <rdfs:label>liquidiser</rdfs:label>
-        <rdfs:label>mixer</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q501862"/>
     </owl:Class>
     
@@ -714,8 +898,14 @@
     <!-- http://www.semanticweb.org/home_objects#Bookshelf -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Bookshelf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Cabinet"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Shelf"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Storage"/>
+        <home_objects1:synonym>bookshelf</home_objects1:synonym>
+        <home_objects1:synonym>bookshelves</home_objects1:synonym>
+        <rdfs:comment>Cabinet with shelving used to store books</rdfs:comment>
+        <rdfs:label>bookcase</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q215857"/>
     </owl:Class>
     
 
@@ -724,6 +914,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Brush">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#CleaningSupplies"/>
+        <home_objects1:synonym>cleaning brush</home_objects1:synonym>
+        <rdfs:comment>brush</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q10673798"/>
     </owl:Class>
     
 
@@ -732,6 +925,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Cabinet">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cupboard"/>
+        <rdfs:label>Box-shaped piece of furniture with doors or drawers for storing miscellaneous items</rdfs:label>
+        <rdfs:label>cabinet</rdfs:label>
+        <rdfs:label>cabinetry</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q2741056"/>
     </owl:Class>
     
 
@@ -740,6 +937,11 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#ChaiseLounge">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignatedChair"/>
+        <home_objects1:synonym>duchesse</home_objects1:synonym>
+        <home_objects1:synonym>lounge chair</home_objects1:synonym>
+        <rdfs:comment>Upholstered chair that is long enough to support the legs</rdfs:comment>
+        <rdfs:label>chaise longue</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q1059232"/>
     </owl:Class>
     
 
@@ -748,6 +950,11 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Chest">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Storage"/>
+        <home_objects1:synonym>coffer</home_objects1:synonym>
+        <home_objects1:synonym>kist</home_objects1:synonym>
+        <rdfs:comment>Box-shaped type of furniture</rdfs:comment>
+        <rdfs:label>chest</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q366134"/>
     </owl:Class>
     
 
@@ -756,6 +963,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#ChinaCabinet">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Cabinet"/>
+        <home_objects1:synonym>breakfront</home_objects1:synonym>
+        <rdfs:label>china cabinet</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q56588168"/>
     </owl:Class>
     
 
@@ -764,6 +974,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#CleaningSupplies">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Tool"/>
+        <rdfs:comment>Substance used to remove dirt or other contaminants</rdfs:comment>
+        <rdfs:label>cleaning supplies</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q1974312"/>
     </owl:Class>
     
 
@@ -772,8 +985,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#CoffeeMaker">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#ElectricalAppliances"/>
+        <home_objects1:synonym>coffee machine</home_objects1:synonym>
         <rdfs:comment>Device for making coffee</rdfs:comment>
-        <rdfs:label>coffee machine</rdfs:label>
         <rdfs:label>coffee maker</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q211841"/>
     </owl:Class>
@@ -801,6 +1014,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#ConsoleTable">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Table"/>
+        <home_objects1:synonym>console</home_objects1:synonym>
+        <rdfs:comment>Small table built to stand flat against a wall</rdfs:comment>
+        <rdfs:label>console table</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q7887380"/>
     </owl:Class>
     
 
@@ -811,13 +1028,19 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Components"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Pillows"/>
         <rdfs:comment>Soft paffing for comfort, often detachable.</rdfs:comment>
+        <rdfs:label>cushion</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q10971235"/>
     </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/home_objects#Decor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Decor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Decor">
+        <rdfs:comment>Set of elements that make up the external design of an architectural structure</rdfs:comment>
+        <rdfs:label>decor</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q3918040"/>
+    </owl:Class>
     
 
 
@@ -825,6 +1048,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#DiningChair">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignatedChair"/>
+        <rdfs:label>dinning chair</rdfs:label>
     </owl:Class>
     
 
@@ -833,6 +1057,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#DinningTable">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Table"/>
+        <rdfs:label>dinning table</rdfs:label>
     </owl:Class>
     
 
@@ -841,6 +1066,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#DishRack">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Tool"/>
+        <home_objects1:synonym>dish drainer</home_objects1:synonym>
+        <rdfs:comment>Rack for drying dishes after washing</rdfs:comment>
+        <rdfs:label>dish rack</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q2571478"/>
     </owl:Class>
     
 
@@ -849,6 +1078,13 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#DisplayCabinet">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Cabinet"/>
+        <home_objects1:synonym>display case</home_objects1:synonym>
+        <home_objects1:synonym>showcase</home_objects1:synonym>
+        <home_objects1:synonym>trophy case</home_objects1:synonym>
+        <home_objects1:synonym>vitrine</home_objects1:synonym>
+        <rdfs:comment>Furniture for display of objects</rdfs:comment>
+        <rdfs:label>display cabinet</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q3561331"/>
     </owl:Class>
     
 
@@ -857,6 +1093,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Dresser">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Wardrobe"/>
+        <home_objects1:synonym>chest with drawers</home_objects1:synonym>
+        <home_objects1:synonym>drawer chest</home_objects1:synonym>
+        <home_objects1:synonym>drawers</home_objects1:synonym>
+        <rdfs:comment>Piece of cabinet furniture with drawers</rdfs:comment>
+        <rdfs:label>dresser</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q14169227"/>
     </owl:Class>
     
 
@@ -873,6 +1115,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#EndTable">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#SideTable"/>
+        <rdfs:label>end table</rdfs:label>
     </owl:Class>
     
 
@@ -881,14 +1124,22 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Frame">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Components"/>
+        <home_objects1:synonym>case</home_objects1:synonym>
+        <home_objects1:synonym>housing</home_objects1:synonym>
         <rdfs:comment>Structural support, often forming the outline of the furniture.</rdfs:comment>
+        <rdfs:label>frame</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q11326220"/>
     </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/home_objects#Furniture -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Furniture"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Furniture">
+        <rdfs:comment>Movable objects used to equip households, offices, or shops for purposes such as storage, seating, sleeping</rdfs:comment>
+        <rdfs:label>furniture</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q14745"/>
+    </owl:Class>
     
 
 
@@ -896,7 +1147,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Hallway">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Areas"/>
-        <rdfs:label>Entryway</rdfs:label>
+        <home_objects1:synonym>corridor</home_objects1:synonym>
+        <home_objects1:synonym>entryway</home_objects1:synonym>
+        <home_objects1:synonym>hall</home_objects1:synonym>
+        <rdfs:comment>Passage affording access to the rooms in a building or vessel</rdfs:comment>
+        <rdfs:label>hallway</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q1135449"/>
     </owl:Class>
     
 
@@ -906,6 +1162,8 @@
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Hinge">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Components"/>
         <rdfs:comment>Allows doors or lids to pivot open and closed.</rdfs:comment>
+        <rdfs:label>hinge</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q244330"/>
     </owl:Class>
     
 
@@ -914,8 +1172,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Keyboard">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#ElectricalAppliances"/>
+        <home_objects1:synonym>computer keyboard</home_objects1:synonym>
         <rdfs:comment>Device comprising an arrangement of buttons or keys used to input text in computers</rdfs:comment>
-        <rdfs:label>computer keyboard</rdfs:label>
         <rdfs:label>keyboard</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q250"/>
     </owl:Class>
@@ -926,6 +1184,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Kitchen">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Areas"/>
+        <rdfs:comment>Space primarily used for preparation and storage of food</rdfs:comment>
+        <rdfs:label>kitchen</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q43164"/>
     </owl:Class>
     
 
@@ -934,10 +1195,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Lamp">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#ElectricalAppliances"/>
+        <home_objects1:synonym>lamps</home_objects1:synonym>
+        <home_objects1:synonym>light source</home_objects1:synonym>
         <rdfs:comment>Part of a light fixture that produces the light</rdfs:comment>
         <rdfs:label>lamp</rdfs:label>
-        <rdfs:label>lamps</rdfs:label>
-        <rdfs:label>light source</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q1138737"/>
     </owl:Class>
     
@@ -948,9 +1209,9 @@
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Laptop">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Computer"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#ElectricalAppliances"/>
+        <home_objects1:synonym>notebook</home_objects1:synonym>
         <rdfs:comment>Personal computer that is foldable and portable</rdfs:comment>
         <rdfs:label>Laptop</rdfs:label>
-        <rdfs:label>notebook</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q3962"/>
     </owl:Class>
     
@@ -960,8 +1221,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Latch">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Components"/>
+        <home_objects1:synonym>bolt</home_objects1:synonym>
+        <home_objects1:synonym>door bolt</home_objects1:synonym>
+        <home_objects1:synonym>lock</home_objects1:synonym>
         <rdfs:comment>Mechanism to secure doors and drawers.</rdfs:comment>
-        <rdfs:label>Lock</rdfs:label>
+        <rdfs:label>latch</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q2477852"/>
     </owl:Class>
     
 
@@ -970,6 +1235,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#LaundryHamper">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Storage"/>
+        <home_objects1:synonym>hamper</home_objects1:synonym>
+        <rdfs:comment>Type of basket</rdfs:comment>
+        <rdfs:label>laundry hamper</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q13479587"/>
     </owl:Class>
     
 
@@ -978,7 +1247,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Leg">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Components"/>
+        <home_objects1:synonym>furniture leg</home_objects1:synonym>
         <rdfs:comment>Supports furniture and elevates it off the ground.</rdfs:comment>
+        <rdfs:label>leg</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q56056049"/>
     </owl:Class>
     
 
@@ -987,6 +1259,13 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#LivingRoom">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Areas"/>
+        <home_objects1:synonym>lounge</home_objects1:synonym>
+        <home_objects1:synonym>lounge room</home_objects1:synonym>
+        <home_objects1:synonym>lounging room</home_objects1:synonym>
+        <home_objects1:synonym>sitting room</home_objects1:synonym>
+        <rdfs:comment>Room in a residential house for relaxing and socializing</rdfs:comment>
+        <rdfs:label>living room</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q475018"/>
     </owl:Class>
     
 
@@ -995,6 +1274,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#MedicineCabinet">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Cabinet"/>
+        <home_objects1:synonym>home apothecary</home_objects1:synonym>
+        <home_objects1:synonym>medicine chest</home_objects1:synonym>
+        <rdfs:comment rdf:resource="https://www.wikidata.org/entity/Q1590990"/>
+        <rdfs:comment>small cache of first aid items and drugs</rdfs:comment>
+        <rdfs:label>medicine cabinet</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q1590990"/>
     </owl:Class>
     
 
@@ -1003,8 +1288,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Microwave">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#ElectricalAppliances"/>
+        <home_objects1:synonym>microwave oven</home_objects1:synonym>
         <rdfs:label>microwave</rdfs:label>
-        <rdfs:label>microwave oven</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q127956"/>
     </owl:Class>
     
@@ -1014,6 +1299,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Mirror">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#WallMounted"/>
+        <rdfs:comment>Surface, typically glass coated with a metal amalgam, which reflects a clear image</rdfs:comment>
+        <rdfs:label>mirror</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q35197"/>
     </owl:Class>
     
 
@@ -1022,8 +1310,13 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Monitor">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#ElectricalAppliances"/>
-        <rdfs:label>display</rdfs:label>
-        <rdfs:label>screen</rdfs:label>
+        <home_objects1:synonym>computer monitor</home_objects1:synonym>
+        <home_objects1:synonym>computer screen</home_objects1:synonym>
+        <home_objects1:synonym>display</home_objects1:synonym>
+        <home_objects1:synonym>screen</home_objects1:synonym>
+        <rdfs:comment>Stand-alone electronic visual display for computers connected via a cable and usually externally powered</rdfs:comment>
+        <rdfs:label>monitor</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q5290"/>
     </owl:Class>
     
 
@@ -1032,6 +1325,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Mouse">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#ElectricalAppliances"/>
+        <home_objects1:synonym>mouse</home_objects1:synonym>
+        <rdfs:comment>Hand-held device used to move a pointer on a computer display</rdfs:comment>
+        <rdfs:label>computer mouse</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q7987"/>
     </owl:Class>
     
 
@@ -1040,6 +1337,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Office">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Areas"/>
+        <home_objects1:synonym>office space</home_objects1:synonym>
+        <rdfs:comment>Room where people perform office work</rdfs:comment>
+        <rdfs:label>office</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q182060"/>
     </owl:Class>
     
 
@@ -1048,6 +1349,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#OfficeChair">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignatedChair"/>
+        <home_objects1:synonym>desk chair</home_objects1:synonym>
+        <rdfs:comment>Seating for office worker</rdfs:comment>
+        <rdfs:label>office chair</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q1021686"/>
     </owl:Class>
     
 
@@ -1056,6 +1361,17 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Ottoman">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignatedChair"/>
+        <home_objects1:synonym>footstool</home_objects1:synonym>
+        <home_objects1:synonym>hassock</home_objects1:synonym>
+        <home_objects1:synonym>poef</home_objects1:synonym>
+        <home_objects1:synonym>poof</home_objects1:synonym>
+        <home_objects1:synonym>pouf</home_objects1:synonym>
+        <home_objects1:synonym>pouffe</home_objects1:synonym>
+        <home_objects1:synonym>puf</home_objects1:synonym>
+        <home_objects1:synonym>tuffet</home_objects1:synonym>
+        <rdfs:comment>Piece of upholstered furniture used as a footstool or low seat</rdfs:comment>
+        <rdfs:label>ottoman</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q3545350"/>
     </owl:Class>
     
 
@@ -1064,6 +1380,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#OutdoorSpace">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Areas"/>
+        <home_objects1:synonym>open-air</home_objects1:synonym>
+        <home_objects1:synonym>outdoor</home_objects1:synonym>
+        <rdfs:label>outdoors</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q107616175"/>
     </owl:Class>
     
 
@@ -1072,7 +1392,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Panel">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Components"/>
+        <home_objects1:synonym>wood panel</home_objects1:synonym>
         <rdfs:comment>Flat, broad surface forming sides, tops, or bottoms (e.g., cupboard doors, table surfaces).</rdfs:comment>
+        <rdfs:label>panel</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q1348059"/>
     </owl:Class>
     
 
@@ -1081,6 +1404,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Pictures">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#WallMounted"/>
+        <home_objects1:synonym>image</home_objects1:synonym>
+        <rdfs:comment>Artifact that depicts or records visual perception</rdfs:comment>
+        <rdfs:label>picture</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q478798"/>
     </owl:Class>
     
 
@@ -1089,6 +1416,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Pillows">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Decor"/>
+        <rdfs:comment>Cushion for the head</rdfs:comment>
+        <rdfs:label>pillow</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q99895"/>
     </owl:Class>
     
 
@@ -1097,6 +1427,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Printer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#ElectricalAppliances"/>
+        <home_objects1:synonym>computer printer</home_objects1:synonym>
+        <rdfs:comment>Computer peripheral that prints text or graphics</rdfs:comment>
+        <rdfs:label>printer</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q82"/>
     </owl:Class>
     
 
@@ -1105,6 +1439,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Shelf">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Storage"/>
+        <home_objects1:synonym>shelves</home_objects1:synonym>
+        <rdfs:comment>Flat horizontal plane used for storage</rdfs:comment>
+        <rdfs:label>shelf</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q45242859"/>
     </owl:Class>
     
 
@@ -1113,6 +1451,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#SideTable">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Table"/>
+        <home_objects1:synonym>side tables</home_objects1:synonym>
+        <rdfs:comment>Table designed to stand against wall, with one side often unfinished</rdfs:comment>
+        <rdfs:label>side table</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q1815040"/>
     </owl:Class>
     
 
@@ -1121,6 +1463,11 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Sideboard">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Storage"/>
+        <home_objects1:synonym>buffet</home_objects1:synonym>
+        <home_objects1:synonym>dresser</home_objects1:synonym>
+        <rdfs:comment>Item of dining room furniture: a set of cabinets, or cupboards, and one or more drawers, topped by a surface for holding food, serving dishes, or lighting devices</rdfs:comment>
+        <rdfs:label>sideboard</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q1762308"/>
     </owl:Class>
     
 
@@ -1149,6 +1496,7 @@
                 <owl:onClass rdf:resource="http://www.semanticweb.org/home_objects#Armrest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>sitting furniture</rdfs:label>
     </owl:Class>
     
 
@@ -1157,6 +1505,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Soap">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#CleaningSupplies"/>
+        <rdfs:comment>Salt of fatty acids, used for washing and cleaning</rdfs:comment>
+        <rdfs:label>soap</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q34396"/>
     </owl:Class>
     
 
@@ -1165,7 +1516,11 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Speakers">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#ElectricalAppliances"/>
-        <rdfs:label>Soundbar</rdfs:label>
+        <home_objects1:synonym>Soundbar</home_objects1:synonym>
+        <home_objects1:synonym>loudspeaker</home_objects1:synonym>
+        <rdfs:comment>Electroacoustic transducer that converts an electrical audio signal into a corresponding sound</rdfs:comment>
+        <rdfs:label>speaker</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q570"/>
     </owl:Class>
     
 
@@ -1174,6 +1529,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Sponge">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#CleaningSupplies"/>
+        <home_objects1:synonym>cleaning sponge</home_objects1:synonym>
+        <home_objects1:synonym>kitchen sponge</home_objects1:synonym>
+        <home_objects1:synonym>sponge tool</home_objects1:synonym>
+        <rdfs:comment>Cleaning tool made from soft and porous usually synthetic or rarely natural material</rdfs:comment>
+        <rdfs:label>sponge</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q1210980"/>
     </owl:Class>
     
 
@@ -1181,7 +1542,10 @@
     <!-- http://www.semanticweb.org/home_objects#Stool -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Stool">
-        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignatedChair"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Stools"/>
+        <rdfs:comment>Simple seating furniture without backrest and armrest</rdfs:comment>
+        <rdfs:label>stool</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q33163"/>
     </owl:Class>
     
 
@@ -1190,6 +1554,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Stools">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignatedChair"/>
+        <rdfs:label>stools</rdfs:label>
     </owl:Class>
     
 
@@ -1198,6 +1563,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Storage">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Furniture"/>
+        <home_objects1:synonym>depot</home_objects1:synonym>
+        <rdfs:comment>Place or device for storing material or immaterial objects</rdfs:comment>
+        <rdfs:label>storage</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q9158768"/>
     </owl:Class>
     
 
@@ -1207,6 +1576,9 @@
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#StorageBench">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#DesignatedChair"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Storage"/>
+        <home_objects1:synonym>entryway bench</home_objects1:synonym>
+        <rdfs:label>storage bench</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q116970616"/>
     </owl:Class>
     
 
@@ -1215,7 +1587,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#TVStand">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Table"/>
-        <rdfs:label>Media Console</rdfs:label>
+        <home_objects1:synonym>Media Console</home_objects1:synonym>
+        <home_objects1:synonym>display stand</home_objects1:synonym>
+        <home_objects1:synonym>monitor stand</home_objects1:synonym>
+        <rdfs:comment>Support base for an electronic display</rdfs:comment>
+        <rdfs:label>TV stand</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q136394241"/>
     </owl:Class>
     
 
@@ -1224,6 +1601,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#TableTop">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#TopSurface"/>
+        <home_objects1:synonym>table top</home_objects1:synonym>
+        <rdfs:comment>Furniture component, top of a table</rdfs:comment>
+        <rdfs:label>tabletop</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q48885552"/>
     </owl:Class>
     
 
@@ -1232,6 +1613,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Television">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#ElectricalAppliances"/>
+        <home_objects1:synonym>TV</home_objects1:synonym>
+        <rdfs:comment>Telecommunication medium for transmitting and receiving moving images</rdfs:comment>
+        <rdfs:label>television</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q289"/>
     </owl:Class>
     
 
@@ -1248,6 +1633,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#ThrowPillow">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Pillows"/>
+        <rdfs:comment>Small, decorative soft furnishing item</rdfs:comment>
+        <rdfs:label>throw pillow</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q4819706"/>
     </owl:Class>
     
 
@@ -1256,6 +1644,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Toaster">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#ElectricalAppliances"/>
+        <rdfs:comment>Small oven for cooking bread</rdfs:comment>
+        <rdfs:label>toaster</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q14890"/>
     </owl:Class>
     
 
@@ -1276,7 +1667,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#TopSurface">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Components"/>
+        <home_objects1:synonym>upper surface</home_objects1:synonym>
         <rdfs:comment>Flat upper part used for placing items.</rdfs:comment>
+        <rdfs:label>top surface</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q29690162"/>
     </owl:Class>
     
 
@@ -1285,6 +1679,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#TowelRack">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Storage"/>
+        <rdfs:label>tower rack</rdfs:label>
     </owl:Class>
     
 
@@ -1293,6 +1688,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#TrashCan">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Tool"/>
+        <rdfs:comment>Container for storage of waste</rdfs:comment>
+        <rdfs:label>trash can</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q354294"/>
     </owl:Class>
     
 
@@ -1301,7 +1699,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Upholstery">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Components"/>
+        <home_objects1:synonym>upholstering</home_objects1:synonym>
         <rdfs:comment>Fabric or leather covering for comfort and aesthetics,</rdfs:comment>
+        <rdfs:label>upholstery</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q1123578"/>
     </owl:Class>
     
 
@@ -1310,6 +1711,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#VanityTable">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Table"/>
+        <home_objects1:synonym>dressing table</home_objects1:synonym>
+        <home_objects1:synonym>makeup vanity</home_objects1:synonym>
+        <home_objects1:synonym>vanity</home_objects1:synonym>
+        <rdfs:comment>Mirror dressing table for makeup application</rdfs:comment>
+        <rdfs:label>vanity table</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q2106696"/>
     </owl:Class>
     
 
@@ -1318,6 +1725,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#WallMounted">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Decor"/>
+        <rdfs:label>wall mounted</rdfs:label>
     </owl:Class>
     
 
@@ -1326,6 +1734,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#WineRack">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Storage"/>
+        <rdfs:comment>Equipment for the organized storage of wine bottles</rdfs:comment>
+        <rdfs:label>wine rack</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q2941029"/>
     </owl:Class>
     
 
@@ -1333,6 +1744,7 @@
     <!-- http://www.semanticweb.org/home_objects#WorkingSurface -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#WorkingSurface">
+        <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Countertop"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#TopSurface"/>
     </owl:Class>
 </rdf:RDF>
