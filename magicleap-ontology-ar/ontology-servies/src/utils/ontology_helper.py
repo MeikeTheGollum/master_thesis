@@ -20,7 +20,13 @@ class OntologyHelper:
         Helper method to create a list of every class inside the ontology.
         :return: The list of all classes currently present inside the ontology
         """
-        return [concept.name for concept in self.ontology.classes()]
+        classes = []
+        for concept in self.ontology.classes():
+            if concept.label:
+                classes.append(concept.label[0])  # take first label
+            else:
+                classes.append(concept.name)  # fallback
+        return classes
     @property
     def get_class_embeddings(self) -> KeyedVectors:
         """
