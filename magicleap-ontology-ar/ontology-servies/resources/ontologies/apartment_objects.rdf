@@ -1041,9 +1041,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#Cabinet">
         <rdfs:subClassOf rdf:resource="http://www.ease-crc.org/ont/SOMA.owl#Cupboard"/>
-        <rdfs:label>Box-shaped piece of furniture with doors or drawers for storing miscellaneous items</rdfs:label>
+        <home_objects1:synonym>cabinetry</home_objects1:synonym>
+        <rdfs:comment>Box-shaped piece of furniture with doors or drawers for storing miscellaneous items</rdfs:comment>
         <rdfs:label>cabinet</rdfs:label>
-        <rdfs:label>cabinetry</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.wikidata.org/entity/Q2741056"/>
     </owl:Class>
     
@@ -1271,6 +1271,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/home_objects#ElectricalAppliances">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/home_objects#Appliances"/>
+        <rdfs:label>electrical appliances</rdfs:label>
     </owl:Class>
     
 
