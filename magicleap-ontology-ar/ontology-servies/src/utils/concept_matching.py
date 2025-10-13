@@ -56,7 +56,7 @@ class ConceptMatching:
         :param results: The results of the search for concepts
 
         """
-        with open("concept_results.json", "w", encoding="utf-8") as f:
+        with open("../../resources/concept_results.json", "w", encoding="utf-8") as f:
             json.dump(results, f, indent=2, ensure_ascii=False)
     def test(self):
         print(self._concepts)
