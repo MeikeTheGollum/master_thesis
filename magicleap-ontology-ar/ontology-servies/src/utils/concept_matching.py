@@ -33,10 +33,7 @@ class ConceptMatching:
             print(f"Error ferching {object}_ {e}")
             return {}
         return data
-        # obj = requests.get(f"http://api.conceptnet.io/c/en/{object}").json()
-        # if len(obj['edges']) == 0:
-        #     return obj['error']['status']
-        # return obj
+
     def get_list_of_concepts_for_objects(self, objects: List[str]) -> List[Dict]:
         """
         Collects every associated API response from ConceptNet for the given list of classes of strings
@@ -61,8 +58,11 @@ class ConceptMatching:
     def test(self):
         print(self._concepts)
         print(len(self._concepts))
-        test = self.get_list_of_concepts_for_objects(self._concepts)
-        self.save_concepts_to_file(test)
+        #test = self.get_list_of_concepts_for_objects(self._concepts)
+        test= self.ontoHelper.get_class_annotations
+        print(test)
+        self.ontoHelper.get_class_synonyms("armchair")
+        self.ontoHelper.get_class_seeAlso("armchair")
 
 
 cm = ConceptMatching(path="https://raw.githubusercontent.com/MeikeTheGollum/master_thesis/refs/heads/main/magicleap-ontology-ar/ontology-servies/resources/ontologies/apartment_objects.rdf")
