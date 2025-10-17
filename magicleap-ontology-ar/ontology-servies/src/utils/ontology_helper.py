@@ -1,3 +1,4 @@
+from difflib import SequenceMatcher
 from functools import cached_property
 from typing import List, Optional, Dict, Any
 from rdflib import URIRef
@@ -80,7 +81,50 @@ class OntologyHelper:
         """
         test = self.get_class_annotations[obj]['synonym']
         print(test)
+    def find_class_by_label(self, label:str, fuzzy: bool = False) -> Optional[Dict[str, Any]]:
+        """
+        Method to find an ontology class by its rdfs:label. If fuzzy is set to true, it
+        performs an approximate string matching. It returns a dictionary containing every
+        important information
+        :param label: The label we search for
+        :param fuzzy: Whether to use approximate string matching
+        :return: A dict with class info, or None if not found
+        """
+        bestMatch = None
+        bestScore = 0.0
 
+        for cls in self.ontology.classes():
+            if not cls.label:
+                continue
+            clsLabel = cls.label[0]
+            if fuzzy:
+                score = SequenceMatcher(None, label.lower(), clsLabel.lower()).ratio()
+                if score > bestScore:
+                    bestMatch, bestScore = cls, score
+            else:
+                if clsLabel.lower() == label.lower():
+                    bestMatch = cls
+                    break
+        if not bestMatch:
+            print("Nothing found")
+            return None
+
+        annotations = {}
+        for ap in self.ontology.annotation_properties():
+            values = getattr(bestMatch, ap.name, [])
+            if values:
+                annotations[ap.name] = list(values)
+        if not fuzzy:
+            externalSources = self.get_class_seeAlso(label)
+        else:
+            externalSources = self.get_class_seeAlso(clsLabel)
+        return {
+            "class": bestMatch,
+            "uri": bestMatch.iri,
+            "name": bestMatch.name,
+            "annotations": annotations ,
+            "sources": externalSources
+        }
     @get_class_embeddings.setter
     def concept_embeddings(self, value: KeyedVectors):
         self._concept_embeddings = value
